@@ -1,0 +1,19 @@
+.cutoff-logo {
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.menu-items li a{
+    font-size: 2rem;
+    font-family: 'gabrielaregular', 'Times New Roman';
+}
+
+@font-face {
+    font-family: 'gabrielaregular';
+    src: url('./fonts/gabriela-regular-webfont.woff2') format('woff2'),
+         url('./fonts/gabriela-regular-webfont.woff') format('woff'),
+         url('./fonts/Gabriela-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
