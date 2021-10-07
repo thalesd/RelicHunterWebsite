@@ -2,7 +2,8 @@
 
 <head>
     <title>Relic Hunter Game</title>
-
+    
+    <link rel="icon" href="./img/icon.png">
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,10 +14,11 @@
         crossorigin="anonymous"></script>
 
     <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="cutoff-logo" src="./img/relic-hunter-logo.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,6 +35,9 @@
                         <a class="nav-link" href="#history-section">História</a>
                     </li>
                     <li class="nav-item px-2">
+                        <a class="nav-link" href="#art-section">Arte</a>
+                    </li>
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="#development-section">Desenvolvimento</a>
                     </li>
                     <li class="nav-item px-2">
@@ -43,37 +48,91 @@
         </div>
     </nav>
 
-    <div class="container container-fluid bg-light">
-        <div id="history-section"></div>
-        <div id="development-section">
-            <div class="jumbotron">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/fireplaceVFX.png" class="card-img-top" alt="Fireplace Simple VFX">
-                    <div class="card-body">
-                        <h5 class="card-title">Fogueira</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+    <div class="container container-fluid">
+        <div id="history-section" class="section">
+            <h1 class="heading text-antiquewhite">História</h1>
+
+            <hr class="text-antiquewhite"/>
+
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="art-section" class="section">
+            <h1 class="heading text-antiquewhite">Arte</h1>
+
+            <hr class="text-antiquewhite"/>
+
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="development-section" class="section">
+            <h1 class="heading text-antiquewhite">Desenvolvimento</h1>
+
+            <hr class="text-antiquewhite"/>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-4 col-xl-3 pt-2">
+                    <div class="card" width="16rem">
+                        <img src="./img/fireplaceVFX.png" class="card-img-top" alt="Fireplace Simple VFX">
+                        <div class="card-body">
+                            <h3 class="card-title">Fogueira</h3>
+                            <p class="card-text">Um ponto de descanso para o seu personagem recuperar vida, consertar suas armas e preparar alimentos nutritivos.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/rainVFX.png" class="card-img-top" alt="Rain Simple VFX">
-                    <div class="card-body">
-                        <h5 class="card-title">Chuva</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+
+                <div class="col-12 col-lg-4 col-xl-3 pt-2">
+                    <div class="card">
+                        <img src="./img/rainVFX.png" class="card-img-top" alt="Rain Simple VFX">
+                        <div class="card-body">
+                            <h3 class="card-title">Chuva</h3>
+                            <p class="card-text">Como qualquer bom jogo, uma chuvinha pode acontecer a qualquer momento.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/rotationVFX.png" class="card-img-top" alt="Rotation Attack Simple VFX">
-                    <div class="card-body">
-                        <h5 class="card-title">Ataque rotativo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+
+                <div class="col-12 col-lg-4 col-xl-3 pt-2">
+                    <div class="card">
+                        <img src="./img/rotationVFX.png" class="card-img-top" alt="Rotation Attack Simple VFX">
+                        <div class="card-body">
+                            <h3 class="card-title">Ataque rotativo</h3>
+                            <p class="card-text">Essa será sua primeira e mais usada habilidade de ataque. Destrua seus inimigos como o guerreiro rodopiante dentro de você.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div id="developer-contact"></div>
+
+        <div id="developer-contact" class="section">
+            <h1 class="heading text-antiquewhite">Contato</h1>
+
+            <hr class="text-antiquewhite"/>
+
+            <div class="row">
+                <div class="jumbotron">
+                    <p class="text-antiquewhite">Preencha o formulario abaixo e nos envie, entraremos em contato assim que possível.</p>
+                </div>
+            </div>
+
+            <form id="contact-form">
+                <div class="pt-2">
+                    <label for="user_email" class="form-label text-antiquewhite">Email</label>
+                    <input id="user_email" class="form-control" type="email" placeholder="nome@exemplo.com.br"/>
+                </div>
+                <div class="pt-2">
+                    <label for="user_message" class="form-label text-antiquewhite">Mensagem</label>
+                    <textarea id="user_message" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="text-center pt-2">
+                    <div class="button btn btn-primary" onclick="sendContactForm()">Enviar</div>
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>

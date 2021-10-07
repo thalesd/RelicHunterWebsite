@@ -1,3 +1,7 @@
+body {
+    font-family: 'gabrielaregular', 'Times New Roman';
+}
+
 .cutoff-logo {
     margin-top: -50px;
     margin-bottom: -50px;
@@ -5,7 +9,14 @@
 
 .menu-items li a{
     font-size: 2rem;
-    font-family: 'gabrielaregular', 'Times New Roman';
+}
+
+.section {
+    margin: 1rem 0 1rem 0;
+}
+
+.text-antiquewhite {
+    color:antiquewhite;
 }
 
 @font-face {
