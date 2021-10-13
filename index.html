@@ -7,6 +7,10 @@
 
     <link rel="icon" href="./img/icon.png">
 
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
@@ -58,8 +62,17 @@
 
             <hr class="text-antiquewhite" />
 
-            <p>
-
+            <p class="text-antiquewhite">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p class="text-antiquewhite">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p class="text-antiquewhite">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p class="text-antiquewhite">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
         </div>
 
@@ -68,9 +81,55 @@
 
             <hr class="text-antiquewhite" />
 
-            <p>
+            <h6 class="text-antiquewhite italics">As artes apresentadasaseguir não são de minha autoria e servem apenas
+                como inspiração e/ou conteúdo
+                temporário.</h6>
 
-            </p>
+            <div id="art-section-carousel" class="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="10000">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#art-section-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#art-section-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#art-section-carousel" data-bs-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid m-auto max-height-carousel"
+                            src="./img/people-white-clothes-stand-rock-by-sea-dusk-looking-into-distance-illustration.jpg"
+                            alt="Primeiro slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="text-antiquewhite text-shadow-sm">Exemplo de arte</h5>
+                                <p class="text-antiquewhite text-sm text-shadow-sm"></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto max-height-carousel" src="./img/character-design-inspiration.jpg"
+                            alt="Segundo slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="text-antiquewhite text-shadow-sm">Exemplo de arte</h5>
+                                <p class="text-antiquewhite text-sm text-shadow-sm"></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto max-height-carousel" src="./img/character-design-inspiration-2.jpg"
+                            alt="Terceiro slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="text-antiquewhite text-shadow-sm">Exemplo de arte</h5>
+                                <p class="text-antiquewhite text-sm text-shadow-sm"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#art-section-carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a class="carousel-control-next" href="#art-section-carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
         </div>
 
         <div id="development-section" class="section">

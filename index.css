@@ -28,6 +28,22 @@ body {
     text-decoration: none;
 }
 
+.italics {
+    font-style: italic;
+}
+
+.text-sm {
+    font-size: .5rem;
+}
+
+.text-shadow-sm {
+    text-shadow: 1px 1px black;
+}
+
+.max-height-carousel {
+    max-height: 25rem;
+}
+
 @font-face {
     font-family: 'gabrielaregular';
     src: url('./fonts/gabriela-regular-webfont.woff2') format('woff2'),
