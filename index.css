@@ -19,6 +19,15 @@ body {
     color:antiquewhite;
 }
 
+.brand-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'gabrielaregular';
     src: url('./fonts/gabriela-regular-webfont.woff2') format('woff2'),
